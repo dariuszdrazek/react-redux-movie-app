@@ -1,0 +1,30 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+
+    li {
+      margin-left: 1rem;
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        color: #323232;
+
+        &:hover {
+          font-weight: bold;
+        }
+        &.active {
+          color: #00003f;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
