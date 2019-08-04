@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 
-const Details = () => {
-    return (
-        <div>
-            Details
-        </div>
-    );
+const Details = ({ getDetails, id }) => {
+     useEffect(() => {
+          getDetails(id);
+     }, []);
+
+     return <div className="details" />;
 };
 
 export default Details;
