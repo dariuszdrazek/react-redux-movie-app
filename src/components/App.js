@@ -6,7 +6,7 @@ import LandingPage from "./LandingPage";
 import Details from "./Details";
 import Watched from "./Watched";
 import ToWatch from "./ToWatch";
-import Search from "./Search";
+import Search from "../containers/Search";
 import Wrapper from "./Wrapper";
 import "../sass/main.scss";
 
@@ -17,11 +17,11 @@ const App = () => {
 
       <Switch>
         <Wrapper>
-          <Route exact path='/' component={LandingPage} />
-          <Route path='/search/:query?' component={Search} />
-          <Route path='/details/:id' component={Details} />
-          <Route path='/watched' component={Watched} />
-          <Route path='/to-watch' component={ToWatch} />
+          <Route exact path="/" component={LandingPage} />
+          <Route path="/search/:query?" component={Search} />
+          <Route path="/details/:id" component={Details} />
+          <Route path="/watched" component={Watched} />
+          <Route path="/to-watch" component={ToWatch} />
         </Wrapper>
       </Switch>
 
